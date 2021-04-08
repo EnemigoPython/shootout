@@ -1,0 +1,40 @@
+<form id="settingsMenu">
+    <input type="range" id="rounds" name="rounds" min="1" max="20" value="5" disabled>
+    <div class="settingsBox">
+        <label for="rounds">Number of rounds:</label>
+        <output id="roundsValue">5</output>
+    </div>
+
+    <input type="range" id="timer" name="timer" min="5" max="120" value="30" disabled>
+    <div class="settingsBox">
+        <label for="timer">Game Timer (seconds):</label>
+        <output id="timerValue">30</output>
+    </div>
+
+    <input type="range" id="character" name="character" min="5" max="80" value="30" disabled>
+    <div class="settingsBox">
+        <label for="character">Character limit:</label>
+        <output id="characterValue">30</output>
+    </div>
+
+    <div class="settingsBox">
+        <label for="element">Game generated element:</label>
+        <input type="radio" id="answers" name="element" value="answers" disabled>
+        <label for="answers">answers</label>
+        <input type="radio" id="prompts" name="element" value="prompts" disabled>
+        <label for="prompts">prompts</label>
+        <input type="radio" id="both" name="element" value="both" checked="true" disabled>
+        <label for="both">both</label>
+    </div>
+
+    <div class="settingsBox">
+        <label for="penalty">Wrong answer penalty:</label>
+        <input type="radio" id="on" name="penalty" value="on" checked="true" disabled>
+        <label for="on">on</label>
+        <input type="radio" id="off" name="penalty" value="off" disabled>
+        <label for="off">off</label>
+    </div>
+
+    <hr>
+    <button type="button" id="startBtn" disabled>Start</button>
+</form>

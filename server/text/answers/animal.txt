@@ -1,0 +1,16 @@
+Dog
+Cat
+Mouse
+Bird
+Moose
+Rat
+Elephant
+Antelope
+Fox
+Skunk
+Whale
+Fish
+Bee
+Snake
+Badger
+Ant

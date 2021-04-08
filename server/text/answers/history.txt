@@ -1,0 +1,17 @@
+Soviet
+Medieval
+Roman
+King
+Queen
+Executioner
+Jester
+Peasant
+Aristocrat
+Warrior
+Aztec
+Spartan
+Trojan
+Mayan
+Incan
+Hangman
+Castle

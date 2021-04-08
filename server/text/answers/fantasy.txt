@@ -1,0 +1,15 @@
+Wizard
+Witch
+Goblin
+Elf
+Demon
+Dragon
+Magic
+Spell
+Scroll
+Rune
+Summon
+Dwarf
+Curse
+Quest
+Potion
