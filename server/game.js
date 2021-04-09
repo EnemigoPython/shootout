@@ -151,8 +151,8 @@ module.exports = {
                 points = this.timeRemaining;
                 // now that it's been guessed, "remove" it (splicing will f up the indices)
                 this.answers[i] = '';
-            } else if (this.settings.penalty === 'on') {
-                points = -50;
+            } else {
+                points = this.settings.penalty === 'on' ? -50 : 0;
             }
             remaining = this.correctCount < 3;
             return {i, remaining, points};
