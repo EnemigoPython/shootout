@@ -1,6 +1,14 @@
 import {shake} from './anims.mjs';
 import {socket, username, settings} from './client.mjs';
 
+
+function newInput() {
+    const input = document.createElement('input');
+    input.classList.add('pickInput');
+    input.setAttribute('maxlength', parseInt(settings.character));
+    return input;
+}
+
 function noSpaces(x) {
     return !x.includes(' ');
 }
@@ -34,13 +42,11 @@ export function pickScreen(preset) {
         for (let i = 0; i < 3; i++) {
             answerEls[i].innerText = preset[i];
         }
-        const replaceInput = document.createElement('input');
-        replaceInput.classList.add('pickInput');
+        const replaceInput = newInput();
         promptEl.parentNode.replaceChild(replaceInput, promptEl);
     } else {
         [...answerEls].forEach(answerEl => {
-            const replaceInput = document.createElement('input');
-            replaceInput.classList.add('pickInput');
+            const replaceInput = newInput();
             answerEl.parentNode.replaceChild(replaceInput, answerEl);
         });
         promptEl.innerText = preset;
